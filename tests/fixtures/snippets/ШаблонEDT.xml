@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <template autoinsert="true" context="com._1c.g5.v8.dt.bsl.Bsl.AddHandlerStatement" deleted="false" description="DEPRECATED" enabled="true" name="ЗапретитьИспользование">#Если НЕ ВебКлиент Тогда
+	Выполнить(СервисныйОбщегоНазначенияПовтИсп.ЗапретитьИспользованиеФункционала(
+		"${ЗапрещенныйФункционалМетод}", // Запрещенный функционал, метод
+		"${ФункционалДляЗаменыНеобязательно}", // Функционал для замены
+		"${КомментарийПояснениеНеобязательно}", // Комментарий / пояснение
+		${ДатаЗапретаВТестовойНеобязательноВидДатаГГГГММДД}, // Дата запрета в тестовой
+		${ДатаЗапретаВРабочейНеобязательноВидДатаГГГГММДД}) // Дата запрета в рабочей
+		);
+#КонецЕсли </template>
+    <template autoinsert="true" context="com._1c.g5.v8.dt.bsl.Bsl.AddHandlerStatement" deleted="false" description="Инкремент" enabled="true" name="++">${Операнд} = ${Операнд} + 1;</template>
+    <template autoinsert="true" context="com._1c.g5.v8.dt.bsl.Bsl.AddHandlerStatement" deleted="false" description="ТекущаяДата" enabled="true" name="ТекущаяДата">ТекущаяДата = '${n1:date(dd.MM.yyyy)}';</template>
+</templates>
